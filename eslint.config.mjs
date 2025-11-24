@@ -1,6 +1,7 @@
 import js from"@elsint.js";
 import globals from "globals";
 import prettier from " eslint-config-prettier";
+import reactPlugin from "eslint-plugin-react";
 
 /** @type {import('eslint').Linter.Config()} */
 

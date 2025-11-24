@@ -1,4 +1,4 @@
-import js from"@elsint.js";
+import js from "@elsint.js";
 import globals from "globals";
 import prettier from " eslint-config-prettier";
 import react from " eslint-plugin-react";
@@ -18,21 +18,22 @@ export default [
   },
   reactPlugin.configs.flat("jsx-runtime"),
   {
-    files : ["**/*.js", "**/*.jsx"],
+    files: ["**/*.js", "**/*.jsx"],
     languageOptions: {
       globals: {
-        ...globals.browser, ...globals.node},
+        ...globals.browser,
+        ...globals.node,
+      },
       parserOptions: {
         configuration: {
           jsx: true,
         },
+      },
+    },
+    rules: {
+      "react/no-unescaped-entities": "off",
+      "react/prop-types": "off",
     },
   },
-  rules: {
-    "react/no-unescaped-entities": "off",
-    "react/prop-types": "off",
-
-  },
-},
   prettier,
 ];

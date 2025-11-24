@@ -1,11 +1,11 @@
-
 const Pizza = (props) => {
-  return ( 
+  return (
     <div className="pizza">
       <h1>{props.name}</h1>
-      <p>{props.description.toLowerCase()}</p>
+      <p>{props.description}</p>
+      <img src={props.image} alt={props.name} />
     </div>
-   );
+  );
 };
 
 export default Pizza;

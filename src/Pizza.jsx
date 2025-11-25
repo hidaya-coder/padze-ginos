@@ -1,7 +1,8 @@
+/*statsfull component Pizza.jsx*/
 let counter = 0;
-const Pizza = (props) => {
-  counter = Data.now();
 
+const Pizza = (props) => {
+  counter = Date.now();
   return (
     <div
       className="pizza"

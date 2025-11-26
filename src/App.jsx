@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div>
       <h1>Padze Gino's - Order Now</h1>
-      <Order/>
+      <Order />
     </div>
   );
 };

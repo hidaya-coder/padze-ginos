@@ -6,7 +6,7 @@ const Pizza = (props) => {
   return (
     <div
       className="pizza"
-      onClick = {() => {
+      onClick={() => {
         console.log("hi");
       }}
     >

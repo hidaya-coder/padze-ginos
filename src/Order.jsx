@@ -32,6 +32,7 @@ export default function Order() {
     fetchPizzaTypes();
   }, [pizzaSize]);
   
+  
 
   return (
     <div className="order">

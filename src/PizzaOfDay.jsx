@@ -7,7 +7,7 @@ const intl = new Intl.NumberFormat("en-US", {
   /*PizzaOfday is component (design)*/
 
 const PizzaOfDay = () => {
-  /*use custom function with state to fetch pizza of day => is logique */
+  /*use custom function with state to fetch pizza of day => (logique) */
   const pizzaOfDay = usePizzaOfDay();
 
   if(!pizzaOfDay) {

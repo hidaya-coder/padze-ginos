@@ -1,8 +1,9 @@
-import {useState , useEffect} from "react";
+import {useState , useDebugValue , useEffect} from "react";
 
-export default function usePizzaOfDay() {
+export const usePizzaOfDay = ( ) =>{
 
   const [pizzaOfDay , setPizzaOfDay] = useState(null);
+  useDebugValue(pizzaOfDay , `${pizzaOfDay?.id} : ${pizzaOfDay?.name} : loadigng pizza of the day`);
 
   async function fetchPizzaOfDay() {
     const res = await fetch ("/api/pizza-of-the-day");

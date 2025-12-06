@@ -13,7 +13,7 @@ export default function Order() {
 
   let price , selectedPizza;
   
-  /*extraxt info of pizza selected from api*/ 
+  /*extract info of pizza selected from api*/ 
   if (!loading) {
     selectedPizza = pizzaTypes.find ((pizza) => pizzaType === pizza.id);
   }
@@ -88,6 +88,7 @@ export default function Order() {
           </span>
           </div>
           <button type="submit">Add to Cart</button>
+          { loading ? (<h1>Loading...</h1>) : (
           <div className="order-pizza">
             <Pizza
               name={selectedPizza?.name}
@@ -96,6 +97,7 @@ export default function Order() {
             />
             <p>{price}</p>
           </div>
+          )}
         </div>
       </form>
     </div>

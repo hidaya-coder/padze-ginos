@@ -1,8 +1,8 @@
-/*statsfull component Order.jsx*/
-import { useState } from "react";
-import { useEffect} from "react";
-import Pizza from "./Pizza.jsx";
-import Cart from "./Cart.jsx";
+/*statsfull component Order.jsx that */
+import { useState , useEffect , useContext } from "react";
+import Pizza from "../src/Pizza.jsx";
+import Cart from "../Cart.jsx";
+import { CartContext } from "../contexts.jsx";
 
 const intl = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
 
@@ -11,7 +11,7 @@ export default function Order() {
   const [pizzaSize, setPizzaSize] = useState("M");
   const [pizzaTypes, setPizzaTypes] = useState([]);
   const [loading , setLoading] = useState(true);
-  const [cart , setCart] = useState([]);
+  const [cart , setCart] = useContext(CartContext) ;
 
   async function checkout() {
     setLoading(true);
@@ -51,9 +51,10 @@ export default function Order() {
   return (
     <div className="order">
       <h2>Create Order</h2>
-      <form onSubmit={ (e) => e.preventDefault(
-        setCart([...cart , {pizza : selectedPizza , size : pizzaSize , price}])
-      )}>
+      <form onSubmit={ (e) => {
+        e.preventDefault();
+        setCart([...cart , {pizza : selectedPizza , size : pizzaSize , price}]);
+      }}>
         <div>
           <div>
             <label htmlFor="pizza-type">Pizza Type: </label>

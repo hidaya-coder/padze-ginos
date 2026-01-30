@@ -1,24 +1,19 @@
-import { StrictMode } from 'react';
+import { StrictMode} from "react";
 import { createRoot } from "react-dom/client";
-import Order from "./Order";
-import PizzaOfDay  from "./PizzaOfDay";
-import Header from './Header';
-import { CartContext } from './contexts';
+import { RouterProvider , createRouter } from "@tanstack/react-router"; 
+import { routeTree } from "./routeTree.gen";
+
+
+const router = createRouter({ routeTree }) 
+/*create the router from routeTree qui contain the all navigations from page to another page */
 
 const App = () => {
-  const cartHook = useState([]);
   return (
-    <CartContext.Provider value={cartHook}>
-      <div>
-        <Header />
-        <Order />
-        <PizzaOfDay />
-      </div>
-    </CartContext.Provider>  
+    <RouterProvider router={router} />
   );
 };
 
-/*you can use the hook in the whole app ans set the carthook anywhere with useContext */ 
+/*you can use the hook in the whole app and set the carthook anywhere with useContext */ 
 
 const container = document.getElementById("root");
 const root = createRoot(container);

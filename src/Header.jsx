@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "./contexts";
+import { Link } from "@tanstack/react-router";
 
 export default function Header () {
   const [cart] = useContext(CartContext) ;
@@ -7,7 +8,9 @@ export default function Header () {
   /*it is difficult to khnow where the state is modofied  => a challenge of context !!!!!  */
   return (
     <nav>
+      <Link to="/">
       <h1 className="logo">Padze Gino's Pizza</h1>
+      </Link>
       <div className="nav-cart">
         <span className="nav-cart-number">{cart.length}</span>
       </div>

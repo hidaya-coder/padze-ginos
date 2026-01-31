@@ -1,12 +1,23 @@
 /*statsfull component Order.jsx that */
 import { useState , useEffect , useContext } from "react";
-import Pizza from "../src/Pizza.jsx";
+import { createLazyFileRoute } from "@tanstack/react-router";
+import Pizza from "../Pizza.jsx";
 import Cart from "../Cart.jsx";
 import { CartContext } from "../contexts.jsx";
-
 const intl = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
 
-export default function Order() {
+
+
+export const Route =  createLazyFileRoute ("/order")({
+  component: Order,
+}) 
+
+/*Route to component Order that is lazy loaded (lorsque user demande le component) */
+
+function Order() { 
+
+  /*component that allow user to create order is a lazy loaded component */
+
   const [pizzaType, setPizzaType] = useState("pepperoni");
   const [pizzaSize, setPizzaSize] = useState("M");
   const [pizzaTypes, setPizzaTypes] = useState([]);

@@ -1,0 +1,82 @@
+{
+  "hash": "5ba668ca",
+  "configHash": "c357885b",
+  "lockfileHash": "5a09fc72",
+  "browserHash": "56be801a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "dec9b124",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../node_modules/react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "90960942",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "01cd03c1",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../node_modules/react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "0cda805b",
+      "needsInterop": true
+    },
+    "@tanstack/react-router": {
+      "src": "../../node_modules/@tanstack/react-router/dist/esm/index.dev.js",
+      "file": "@tanstack_react-router.js",
+      "fileHash": "e9692580",
+      "needsInterop": false
+    },
+    "@tanstack/router-devtools": {
+      "src": "../../node_modules/@tanstack/router-devtools/dist/esm/index.js",
+      "file": "@tanstack_router-devtools.js",
+      "fileHash": "021cab6c",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "2357c341",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "FloatingTanStackRouterDevtools-B7vy70jP-XJODF5RQ": {
+      "file": "FloatingTanStackRouterDevtools-B7vy70jP-XJODF5RQ.js"
+    },
+    "chunk-NZFTWEJH": {
+      "file": "chunk-NZFTWEJH.js"
+    },
+    "chunk-NFZGTFWP": {
+      "file": "chunk-NFZGTFWP.js"
+    },
+    "chunk-WZ5YIGX4": {
+      "file": "chunk-WZ5YIGX4.js"
+    },
+    "chunk-I4IV43OG": {
+      "file": "chunk-I4IV43OG.js"
+    },
+    "BaseTanStackRouterDevtoolsPanel-Bmws3ikM-7Z5HZ2UX": {
+      "file": "BaseTanStackRouterDevtoolsPanel-Bmws3ikM-7Z5HZ2UX.js"
+    },
+    "chunk-YYRTEYOG": {
+      "file": "chunk-YYRTEYOG.js"
+    },
+    "chunk-FSENGD3E": {
+      "file": "chunk-FSENGD3E.js"
+    },
+    "chunk-IJK6Z7P5": {
+      "file": "chunk-IJK6Z7P5.js"
+    },
+    "chunk-24O5ED5J": {
+      "file": "chunk-24O5ED5J.js"
+    }
+  }
+}
